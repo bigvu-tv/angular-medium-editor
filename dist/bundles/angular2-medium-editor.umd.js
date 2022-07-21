@@ -2,7 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('medium-editor')) :
     typeof define === 'function' && define.amd ? define('angular2-medium-editor', ['exports', '@angular/core', 'medium-editor'], factory) :
     (factory((global['angular2-medium-editor'] = {}),global.ng.core,global.MediumEditor));
-}(this, (function (exports,core,MediumEditor) { 'use strict';
+}(this, (function (exports,i0,MediumEditor) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -20,7 +20,7 @@
     var MediumEditorDirective = /** @class */ (function () {
         function MediumEditorDirective(el) {
             this.el = el;
-            this.update = new core.EventEmitter();
+            this.update = new i0.EventEmitter();
         }
         /**
          * @return {?}
@@ -126,27 +126,49 @@
                 if (change.isFirstChange()) {
                     return true;
                 }
-                return !core.ɵlooseIdentical(viewModel, change.currentValue);
+                return !Object.is(viewModel, change.currentValue);
             };
         MediumEditorDirective.decorators = [
-            { type: core.Directive, args: [{
+            { type: i0.Directive, args: [{
                         selector: 'medium-editor'
-                    },] }
+                    },] },
         ];
         /** @nocollapse */
         MediumEditorDirective.ctorParameters = function () {
             return [
-                { type: core.ElementRef }
+                { type: i0.ElementRef }
             ];
         };
         MediumEditorDirective.propDecorators = {
-            model: [{ type: core.Input, args: ['editorModel',] }],
-            options: [{ type: core.Input, args: ['editorOptions',] }],
-            placeholder: [{ type: core.Input, args: ['editorPlaceholder',] }],
-            update: [{ type: core.Output, args: ['editorModelChange',] }]
+            model: [{ type: i0.Input, args: ['editorModel',] }],
+            options: [{ type: i0.Input, args: ['editorOptions',] }],
+            placeholder: [{ type: i0.Input, args: ['editorPlaceholder',] }],
+            update: [{ type: i0.Output, args: ['editorModelChange',] }]
         };
+        /** @nocollapse */ MediumEditorDirective.ɵfac = function MediumEditorDirective_Factory(t) { return new (t || MediumEditorDirective)(i0.ɵɵdirectiveInject(i0.ElementRef)); };
+        /** @nocollapse */ MediumEditorDirective.ɵdir = i0.ɵɵdefineDirective({ type: MediumEditorDirective, selectors: [["medium-editor"]], inputs: { model: ["editorModel", "model"], options: ["editorOptions", "options"], placeholder: ["editorPlaceholder", "placeholder"] }, outputs: { update: "editorModelChange" }, features: [i0.ɵɵNgOnChangesFeature] });
         return MediumEditorDirective;
     }());
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(MediumEditorDirective, [{
+                type: i0.Directive,
+                args: [{
+                        selector: 'medium-editor'
+                    }]
+            }], function () { return [{ type: i0.ElementRef }]; }, { model: [{
+                    type: i0.Input,
+                    args: ['editorModel']
+                }], options: [{
+                    type: i0.Input,
+                    args: ['editorOptions']
+                }], placeholder: [{
+                    type: i0.Input,
+                    args: ['editorPlaceholder']
+                }], update: [{
+                    type: i0.Output,
+                    args: ['editorModelChange']
+                }] });
+    })();
 
     /**
      * @fileoverview added by tsickle
@@ -156,7 +178,7 @@
         function MediumEditorModule() {
         }
         MediumEditorModule.decorators = [
-            { type: core.NgModule, args: [{
+            { type: i0.NgModule, args: [{
                         imports: [],
                         exports: [
                             MediumEditorDirective
@@ -164,10 +186,27 @@
                         declarations: [
                             MediumEditorDirective
                         ],
-                    },] }
+                    },] },
         ];
+        /** @nocollapse */ MediumEditorModule.ɵmod = i0.ɵɵdefineNgModule({ type: MediumEditorModule });
+        /** @nocollapse */ MediumEditorModule.ɵinj = i0.ɵɵdefineInjector({ factory: function MediumEditorModule_Factory(t) { return new (t || MediumEditorModule)(); }, imports: [[]] });
         return MediumEditorModule;
     }());
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(MediumEditorModule, { declarations: [MediumEditorDirective], exports: [MediumEditorDirective] }); })();
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(MediumEditorModule, [{
+                type: i0.NgModule,
+                args: [{
+                        imports: [],
+                        exports: [
+                            MediumEditorDirective
+                        ],
+                        declarations: [
+                            MediumEditorDirective
+                        ],
+                    }]
+            }], null, null);
+    })();
 
     /**
      * @fileoverview added by tsickle

@@ -18,17 +18,20 @@
   "license": "MIT",
   "main": "bundles/angular2-medium-editor.umd.js",
   "devDependencies": {
-    "@angular/compiler": "^7.2.4",
-    "@angular/compiler-cli": "^7.2.4",
-    "@angular/core": "^7.2.4",
+    "@angular/compiler": "^10.2.5",
+    "@angular/compiler-cli": "^10.2.5",
+    "@angular/core": "^10.2.5",
+    "@angular/material": "^10.2.7",
     "medium-editor": "^5.23.3",
     "ng-packagr": "^4.7.0",
     "tsickle": "^0.34.3",
     "tslib": "^1.9.3",
-    "typescript": "3.2.4"
+    "typescript": "~4.0.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.2"
   },
   "peerDependencies": {
-    "@angular/core": "^7.2.4",
+    "@angular/core": "^10.2.5",
     "medium-editor": "^5.23.3"
   },
   "module": "fesm5/angular2-medium-editor.js",
@@ -41,6 +44,6 @@
   "metadata": "angular2-medium-editor.metadata.json",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^2.0.0"
   }
 }

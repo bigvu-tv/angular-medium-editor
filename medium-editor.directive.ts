@@ -7,8 +7,7 @@ import {
     OnDestroy,
     OnInit,
     Output,
-    Renderer,
-    ɵlooseIdentical
+    Renderer2
 } from '@angular/core';
 import * as MediumEditor from 'medium-editor';
 
@@ -97,6 +96,6 @@ export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
     if (change.isFirstChange()) {
       return true;
     }
-    return !ɵlooseIdentical(viewModel, change.currentValue);
+    return !Object.is(viewModel, change.currentValue);
   }
 }

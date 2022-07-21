@@ -17,7 +17,7 @@ export declare class MediumEditorDirective implements OnInit, OnChanges, OnDestr
     model: any;
     options: any;
     placeholder: string;
-    update: EventEmitter<{}>;
+    update: EventEmitter<any>;
     constructor(el: ElementRef);
     ngOnInit(): void;
     refreshView(): void;
