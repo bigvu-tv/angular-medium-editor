@@ -1,6 +1,6 @@
 {
   "name": "angular-medium-editor",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Angular 2 directive for angular-medium-editor",
   "keywords": [
     "angular",
@@ -16,14 +16,13 @@
     "url": "https://github.com/codiak/angular2-medium-editor"
   },
   "license": "MIT",
-  "main": "medium-editor.directive.ts",
   "devDependencies": {
     "@angular/compiler": "^10.2.5",
     "@angular/compiler-cli": "^10.2.5",
     "@angular/core": "^10.2.5",
     "@angular/material": "^10.2.7",
     "medium-editor": "^5.23.3",
-    "ng-packagr": "^4.7.0",
+    "ng-packagr": "^10.1.2",
     "tsickle": "^0.34.3",
     "tslib": "^1.9.3",
     "typescript": "~4.0.0",
