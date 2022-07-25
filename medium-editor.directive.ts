@@ -21,7 +21,7 @@ import * as MediumEditor from 'medium-editor';
  *    [editorPlaceholder]="placeholderVar"></medium-editor>
  */
 @Directive({
-  selector: '[medium-editor]'
+  selector: 'medium-editor'
 })
 export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
 
