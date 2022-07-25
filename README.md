@@ -7,13 +7,16 @@ Currently updated to support *Angular 14* by BigVu
 Install with [Npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save https://github.com/bigvu-tv/angular-medium-editor
+$ npm i--save https://github.com/bigvu-tv/angular-medium-editor
 ```
 
-[Medium editor](https://github.com/yabwe/medium-editor) is a required peer dependency, so you'll need to install it alongside this angular wrapper:
+[Medium editor](https://github.com/yabwe/medium-editor) is a required peer dependencies, so you'll need to install it alongside this angular wrapper:
 
 ```bash
-$ npm install --save medium-editor
+$ npm i --save medium-editor
+```
+```bash
+$ npm i --save-dev @types/medium-editor
 ```
 
 The `angular-v14-medium-editor` package should import medium-editor from your node_modules.
