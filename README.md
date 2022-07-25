@@ -1,13 +1,13 @@
-# angular2-medium-editor
+# angular-v14-medium-editor
 This is an Angular 2 directive for the [Medium.com inline editor clone](https://github.com/yabwe/medium-editor) by Davi Ferreira, derived from the [AngularJS medium editor directive](https://github.com/thijsw/angular-medium-editor), and forked from progress made by Thijs on [angular-medium-editor](https://github.com/thijsw/angular-medium-editor).
 
-Currently updated to support *Angular 7*
+Currently updated to support *Angular 14* by BigVu
 ## Import the Module
 
 Install with [Npm](https://www.npmjs.com/):
 
 ```sh
-$ npm install --save angular2-medium-editor
+$ npm install --save https://github.com/bigvu-tv/angular-medium-editor
 ```
 
 [Medium editor](https://github.com/yabwe/medium-editor) is a required peer dependency, so you'll need to install it alongside this angular wrapper:
@@ -16,12 +16,12 @@ $ npm install --save angular2-medium-editor
 $ npm install --save medium-editor
 ```
 
-The `angular2-medium-editor` package should import medium-editor from your node_modules.
+The `angular-v14-medium-editor` package should import medium-editor from your node_modules.
 
 Finally, import the module into your project:
 
 ```typescript
-import { MediumEditorModule } from 'angular2-medium-editor'
+import { MediumEditorModule } from 'angular-v14-medium-editor'
 ```
 
 ```typescript

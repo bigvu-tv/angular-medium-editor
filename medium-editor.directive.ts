@@ -25,14 +25,14 @@ import * as MediumEditor from 'medium-editor';
 })
 export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
 
-  private lastViewModel: string;
-  private element: HTMLElement;
+  private lastViewModel: string = '';
+  private element: HTMLElement = new HTMLElement();
   private editor: any;
-  private active: boolean;
+  private active: boolean = false;
 
-	@Input('editorModel') model: any;
+  @Input('editorModel') model: any;
   @Input('editorOptions') options: any;
-  @Input('editorPlaceholder') placeholder: string;
+  @Input('editorPlaceholder') placeholder: string = '';
 
   @Output('editorModelChange') update = new EventEmitter();
 
@@ -51,7 +51,7 @@ export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
 
     // Global MediumEditor
     this.editor = new MediumEditor('.me-editable', this.options);
-    this.editor.subscribe('editableInput', (event, editable) => {
+    this.editor.subscribe('editableInput', (event : any, editable: any) => {
       this.updateModel();
     });
   }
@@ -62,7 +62,7 @@ export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
     }
   }
 
-  ngOnChanges(changes): void {
+  ngOnChanges(changes : any): void {
     if (this.isPropertyUpdated(changes, this.lastViewModel)) {
       this.lastViewModel = this.model;
       this.refreshView();
@@ -88,7 +88,7 @@ export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
     this.editor.destroy();
   }
 
-  isPropertyUpdated(changes, viewModel) {
+  isPropertyUpdated(changes : any, viewModel: any) {
     if (!changes.hasOwnProperty('model')) { return false; }
 
     const change = changes.model;

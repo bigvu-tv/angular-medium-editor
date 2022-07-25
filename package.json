@@ -1,44 +1,41 @@
 {
-  "name": "angular-medium-editor",
-  "version": "1.4.1",
-  "description": "Angular 2 directive for angular-medium-editor",
+  "name": "angular-version14-medium-editor",
+  "version": "2",
+  "description": "Angular 2 directive  for angular-medium-editor that supports Angular version 14",
   "keywords": [
     "angular",
     "medium-editor"
   ],
-  "homepage": "https://github.com/codiak/angular2-medium-editor",
-  "bugs": "https://github.com/codiak/angular2-medium-editor/issues",
+  "homepage": "https://github.com/bigvu-tv/angular-medium-editor",
+  "bugs": "https://github.com/bigvu-tv/angular-medium-editor/issues",
   "author": {
-    "name": "Codiak"
+    "name": "BigVu"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codiak/angular2-medium-editor"
+    "url": "https://github.com/bigvu-tv/angular-medium-editor"
   },
   "license": "MIT",
   "devDependencies": {
-    "@angular/compiler": "^10.2.5",
-    "@angular/compiler-cli": "^10.2.5",
-    "@angular/core": "^10.2.5",
-    "@angular/material": "^10.2.7",
+    "@angular/compiler": "^14.1.0",
+    "@angular/compiler-cli": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "@angular/material": "^14.1.0",
+    "@types/medium-editor": "^5.0.5",
     "medium-editor": "^5.23.3",
-    "ng-packagr": "^10.1.2",
+    "ng-packagr": "^14.1.0",
+    "sass": "~1.54.0",
+    "sass-loader": "^13.0.2",
     "tsickle": "^0.34.3",
-    "tslib": "^1.9.3",
-    "typescript": "~4.0.0",
-    "sass": "~1.32.0",
-    "sass-loader": "^10.0.2"
+    "tslib": "^2.4.0",
+    "typescript": "~4.7.4"
   },
   "scripts": {
-    "build": "ng-packagr -p package.json"
-  },
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    }
+    "build": "ng-packagr -p ng-package.json"
   },
   "peerDependencies": {
-    "@angular/core": "^10.2.5",
+    "@angular/core": "^14.1.0",
     "medium-editor": "^5.23.3"
-  }
+  },
+  "type": "module"
 }

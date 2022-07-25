@@ -3,9 +3,13 @@
         "module": "es6",
         "target": "es5",
         "sourceMap": true,
-        "experimentalDecorators": true
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "moduleResolution":"node",
+        "allowJs": true
     },
     "files": [
-        "./medium-editor.directive.ts"
+        "./medium-editor.directive.ts",
+        "./medium-editor.module.ts"
     ]
 }

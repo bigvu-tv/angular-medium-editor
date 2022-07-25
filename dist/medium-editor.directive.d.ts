@@ -1,4 +1,5 @@
 import { ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import * as i0 from "@angular/core";
 /**
  * Medium Editor wrapper directive.
  *
@@ -31,4 +32,6 @@ export declare class MediumEditorDirective implements OnInit, OnChanges, OnDestr
      */
     ngOnDestroy(): void;
     isPropertyUpdated(changes: any, viewModel: any): boolean;
+    static ɵfac: i0.ɵɵFactoryDeclaration<MediumEditorDirective, never>;
+    static ɵdir: i0.ɵɵDirectiveDeclaration<MediumEditorDirective, "medium-editor", never, { "model": "editorModel"; "options": "editorOptions"; "placeholder": "editorPlaceholder"; }, { "update": "editorModelChange"; }, never, never, false>;
 }
