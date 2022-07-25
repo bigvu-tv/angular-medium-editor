@@ -1,6 +1,6 @@
 {
   "name": "angular-v14-medium-editor",
-  "version": "2",
+  "version": "2.0.0",
   "description": "Angular 2 directive  for angular-medium-editor that supports Angular version 14",
   "keywords": [
     "angular",
