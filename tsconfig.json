@@ -11,8 +11,9 @@
         "declaration": false,
         "downlevelIteration": true,
         "paths": {
-            "src": [
-                "dist/"
+            "angular-medium-editor": [
+                "dist/angular-medium-editor/angular-medium-editor",
+                "dist/angular-medium-editor/"
             ]
         },
         "experimentalDecorators": true,
