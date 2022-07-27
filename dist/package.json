@@ -1,0 +1,31 @@
+{
+  "name": "angular-medium-editor",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/core": "^14.1.0",
+    "medium-editor": "^5.23.3"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "module": "fesm2015/angular-medium-editor.mjs",
+  "es2020": "fesm2020/angular-medium-editor.mjs",
+  "esm2020": "esm2020/angular-medium-editor.mjs",
+  "fesm2020": "fesm2020/angular-medium-editor.mjs",
+  "fesm2015": "fesm2015/angular-medium-editor.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/angular-medium-editor.mjs",
+      "es2020": "./fesm2020/angular-medium-editor.mjs",
+      "es2015": "./fesm2015/angular-medium-editor.mjs",
+      "node": "./fesm2015/angular-medium-editor.mjs",
+      "default": "./fesm2020/angular-medium-editor.mjs"
+    }
+  },
+  "sideEffects": false
+}
