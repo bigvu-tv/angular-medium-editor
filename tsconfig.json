@@ -1,15 +1,34 @@
 {
+    "compileOnSave": false,
     "compilerOptions": {
-        "module": "es6",
-        "target": "es5",
+        "baseUrl": "./",
+        "outDir": "./dist/out-tsc",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
         "sourceMap": true,
+        "declaration": false,
+        "downlevelIteration": true,
+        "paths": {
+            "src": [
+                "dist/"
+            ]
+        },
         "experimentalDecorators": true,
-        "noImplicitAny": false,
-        "moduleResolution":"node",
-        "allowJs": true
+        "moduleResolution": "node",
+        "importHelpers": true,
+        "target": "es2017",
+        "module": "es2020",
+        "lib": [
+            "es2018",
+            "dom"
+        ]
     },
-    "files": [
-        "./medium-editor.directive.ts",
-        "./medium-editor.module.ts"
-    ]
+    "angularCompilerOptions": {
+        "enableI18nLegacyMessageIdFormat": false,
+//        "strictInjectionParameters": true,
+//        "strictInputAccessModifiers": true,
+//        "strictTemplates": true
+    }
 }

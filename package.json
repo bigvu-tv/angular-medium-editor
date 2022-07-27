@@ -1,7 +1,7 @@
 {
-  "name": "angular-v14-medium-editor",
+  "name": "angular-medium-editor",
   "version": "2.0.0",
-  "description": "Angular 2 directive  for angular-medium-editor that supports Angular version 14",
+  "description": "Angular directive for angular-medium-editor that supports Angular version 14",
   "keywords": [
     "angular",
     "medium-editor"
@@ -9,7 +9,7 @@
   "homepage": "https://github.com/bigvu-tv/angular-medium-editor",
   "bugs": "https://github.com/bigvu-tv/angular-medium-editor/issues",
   "author": {
-    "name": "BigVu"
+    "name": "BIGVU"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,10 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@angular-devkit/build-angular": "^14.1.0",
     "@angular/compiler": "^14.1.0",
     "@angular/compiler-cli": "^14.1.0",
+    "@angular/cli": "^14.1.0",
     "@angular/core": "^14.1.0",
     "@angular/material": "^14.1.0",
     "@types/medium-editor": "^5.0.5",
@@ -27,15 +29,10 @@
     "sass": "~1.54.0",
     "sass-loader": "^13.0.2",
     "tsickle": "^0.34.3",
-    "tslib": "^2.4.0",
     "typescript": "~4.7.4"
   },
   "scripts": {
-    "build": "ng-packagr -p ng-package.json"
-  },
-  "peerDependencies": {
-    "@angular/core": "^14.1.0",
-    "medium-editor": "^5.23.3"
+    "build": "ng-packagr -p src/ng-package.json"
   },
   "type": "module"
 }
