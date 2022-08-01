@@ -26,7 +26,7 @@ import * as MediumEditor from 'medium-editor';
 export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
 
   private lastViewModel: string = '';
-  private element: HTMLElement = new HTMLElement();
+  private element: HTMLElement;
   private editor: any;
   private active: boolean = false;
 
@@ -36,10 +36,12 @@ export class MediumEditorDirective implements OnInit, OnChanges, OnDestroy {
 
   @Output('editorModelChange') update = new EventEmitter();
 
-  constructor(private el: ElementRef) { }
+  constructor(private el: ElementRef) {
+    this.element = this.el.nativeElement;
+  }
 
   ngOnInit() {
-    this.element = this.el.nativeElement;
+
     this.element.innerHTML = '<div class="me-editable">' + this.model + '</div>';
     this.active = true;
 

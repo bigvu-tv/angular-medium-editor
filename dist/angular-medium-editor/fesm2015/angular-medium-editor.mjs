@@ -15,13 +15,12 @@ class MediumEditorDirective {
     constructor(el) {
         this.el = el;
         this.lastViewModel = '';
-        this.element = new HTMLElement();
         this.active = false;
         this.placeholder = '';
         this.update = new EventEmitter();
+        this.element = this.el.nativeElement;
     }
     ngOnInit() {
-        this.element = this.el.nativeElement;
         this.element.innerHTML = '<div class="me-editable">' + this.model + '</div>';
         this.active = true;
         if (this.placeholder && this.placeholder.length) {

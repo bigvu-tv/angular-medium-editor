@@ -7,7 +7,7 @@ Currently updated to support *Angular 14* by BigVu
 Install with [Npm](https://www.npmjs.com/):
 
 ```sh
-$ npm i--save https://github.com/bigvu-tv/angular-medium-editor
+$ npm i --save https://github.com/bigvu-tv/angular-medium-editor
 ```
 
 [Medium editor](https://github.com/yabwe/medium-editor) is a required peer dependencies, so you'll need to install it alongside this angular wrapper:
